@@ -33,5 +33,9 @@ class Test:
         assert self.a1.withdraw(25) is False
         assert self.a1.get_balance() == 15
 
+        assert self.a1.withdraw(-5) is False
+        assert self.a1.get_balance() == 15
+
         assert self.a1.withdraw(0) is False
+        assert self.a1.get_balance() == 15
 
