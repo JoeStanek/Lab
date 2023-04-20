@@ -9,7 +9,7 @@ class Account:
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount) -> bool:
+    def deposit(self, amount: float) -> bool:
         """
         Allows users to deposit an amount into their account
         :param amount: the amount they want to deposit
@@ -21,7 +21,7 @@ class Account:
         else:
             return False
 
-    def withdraw(self, amount) -> bool:
+    def withdraw(self, amount: float) -> bool:
         """
         Allows users to withdraw an amount from their account
         :param amount: Amount they want to withdraw
@@ -33,7 +33,7 @@ class Account:
         else:
             return False
 
-    def get_balance(self) -> int:
+    def get_balance(self) -> float:
         """
         Lets users see their balance
         :return: The users balance
@@ -46,3 +46,4 @@ class Account:
         :return: The account name
         """
         return self.__account_name
+    
