@@ -1,6 +1,6 @@
 class Account:
 
-    def __init__(self, name) -> None:
+    def __init__(self, name: str) -> None:
         """
         Function to initialize name and balance,
         :param name: sets the name of the account
@@ -46,4 +46,3 @@ class Account:
         :return: The account name
         """
         return self.__account_name
-    
