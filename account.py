@@ -27,8 +27,9 @@ class Account:
         :param amount: Amount they want to withdraw
         :return: True or False depending on if the process was successful or not
         """
-        if amount > 0 or amount < self.__account_balance:
+        if 0 < amount <= self.__account_balance:
             self.__account_balance -= amount
+            return True
         else:
             return False
 
