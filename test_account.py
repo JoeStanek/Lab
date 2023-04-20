@@ -1,11 +1,10 @@
-import unittest
+import pytest
 from account import *
 
-class MyTestCase(unittest.TestCase):
-    def test_deposit(self):
-        pass
 
 
+def test_deposit(self):
+    assert deposit(5) == True
 
 
 if __name__ == '__main__':
